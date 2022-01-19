@@ -13,8 +13,6 @@ task.addEventListener('submit' ,(event)=>{
     divElement.innerHTML = template;
     list.appendChild(divElement);
     document.getElementById('text').value ="";
-    
-
 }
 
 );
