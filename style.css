@@ -2,6 +2,7 @@ body{
     background-color: rgb(212 , 214 , 221);
     margin:15px;
 }
+/* for heading of application */
 h1{
     text-align: center;
 }
@@ -13,11 +14,11 @@ h1{
     width: auto;
     height: auto;
 }
-
+/* design form  */
 
 #text {
     height: 40px;
-    width: 98%;
+    width: 95%;
     min-width: 50%;
     margin: 10px;
     font-size: 15px;
@@ -33,7 +34,7 @@ h1{
     border-radius: 4px;
     background-repeat: no-repeat;
 }
-
+/* button design */
 #addButton{
     margin-left: -95px;
     border:0px;
@@ -41,6 +42,7 @@ h1{
     padding: 8px;
     outline: none;
 }
+
 #addButton{
     font-size: 15px;
     width: 80px;
@@ -50,9 +52,11 @@ h1{
     
 }
 
-.bullet{
-   list-style-type : circle;
-   font-size: 25px;
+/* design heading of task list */
+#checkLogo{
+    width:30px;
+    height: 14px;
+    padding-top: 5px;
 }
 #styleTop{
     height: 10px;
@@ -61,12 +65,11 @@ h1{
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
 }
-#checkLogo{
-    width:30px;
-    height: 14px;
-    padding-top: 5px;
+/*  design task list */
+.bullet{
+   list-style-type : circle;
+   font-size: 25px;
 }
-
 
 .addTask{
     display: flex;
@@ -81,6 +84,8 @@ div:hover > .deleteTask{
     box-shadow: inset 0 0 3px rgb(163, 161, 161);
     border-radius: 10px;
 }
+
+/* delete task design */
 .deleteTask{
     padding-right: 25px;
     padding-top: 5px;
@@ -92,6 +97,8 @@ div:hover > .deleteTask{
     font-size: 10px;
     border: 1px solid black ;
 }
+
+/* design bottom part */
 #styleBottom{
     border-top:1px solid lightgrey;
     height: 20px;

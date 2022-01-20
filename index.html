@@ -1,25 +1,33 @@
 <html>
     <head>
         <title>TodoList</title>
+        <!-- adding style sheet -->
         <link rel="stylesheet" href="./style.css">
+        <!-- adding logo  -->
         <link rel ="icon" href="./images/logo.jpg">
+        <!-- make the app responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
+            <!-- heading of application -->
             <h1>To Do App </h1>
             <div id ="todoapp">
+                <!-- form is used to take the input from user -->
                     <form id ="input_data" action="" method="POST">
-                <input id ="text" id ="text" placeholder="Type your To do list ">
+                <input id ="text" id ="text" placeholder="Type your To do list " required>
                 <button id ="addButton">Add</button>
                     </form>
                 <div id ="styleTop">
+                    <!-- providing heading to the task  list -->
                     <div><img id="checkLogo" src="images/checkLogo.png"> complete all tasks</div>
                     <div>clear completed</div>
                 </div>
+                <!-- task are added in bullet list -->
                 <ul class ="bullet">
                     <div id ="taskList">
                     </div>
                 </ul>
+                <!-- for bottom part of task -->
             <div id ="styleBottom">
                
             </div>
