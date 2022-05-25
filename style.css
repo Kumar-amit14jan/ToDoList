@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(212 , 214 , 221);
+    background-color: rgb(251,251,251);
     margin:15px;
 }
 /* for heading of application */
@@ -9,14 +9,14 @@ h1{
 
 #todoapp{
     margin-top: 10px;
-    background-color: white;
+    background-color: rgb(255,255,255);
     border-radius: 10px;
     width: auto;
     height: auto;
 }
 /* design form  */
 
-#text {
+input {
     height: 40px;
     width: 95%;
     min-width: 50%;
@@ -27,12 +27,14 @@ h1{
     outline-style: 1px solid;
     outline-color: snow;
     background-color: rgb(238 , 238 , 238);
-    background-image: url("./images/logo.jpg");
     position:left;
     background-size: 40px;
-    padding-left: 45px;
+    padding-left: 10px;
     border-radius: 4px;
     background-repeat: no-repeat;
+}
+#error{
+    margin-left:10px;
 }
 
 /* button design */
