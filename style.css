@@ -16,100 +16,84 @@ h1{
 }
 /* design form  */
 
-input {
+#date ,#text{
     height: 40px;
-    width: 95%;
-    min-width: 50%;
+    width: 40%;
+    min-width: 40%;
     margin: 10px;
     font-size: 15px;
     padding: 5px;
-    border: none;
-    outline-style: 1px solid;
-    outline-color: snow;
-    background-color: rgb(238 , 238 , 238);
+    background-color: rgb(251,251,252);
     position:left;
+    border:1px solid lightgrey;
     background-size: 40px;
     padding-left: 10px;
     border-radius: 4px;
-    background-repeat: no-repeat;
+}
+input:focus{
+    border: 1px solid white;
 }
 #error{
     margin-left:10px;
 }
 
 /* button design */
-#addButton{
-    margin-left: -95px;
-    border:0px;
-    box-sizing: border-box;
-    padding: 8px;
-    outline: none;
-    font-size: 15px;
-    width: 80px;
-    border-radius:40%;
-    background-image: linear-gradient(180deg, blue, lightblue);;
-    color: white;
+#addTask{
+    font-size: 35px;
+    margin-left: -3.6%;
+    position: fixed;
+    padding: 10px;
+    min-width: 4px;
+    color:red;
+    font-weight: 500;
 }
+
 
 
 /* design heading of task list */
-#checkLogo{
-    width:30px;
-    height: 14px;
-    padding-top: 5px;
+table{
+    margin-left: 1%;
+    padding: 8px;
+    width:90%;
+    border-collapse: collapse;
 }
-#styleTop{
-    height: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid lightgray;
+td,th{
+    text-align: left;
+    padding: 8px;
+    border : 1px solid lightgrey;
 }
-/*  design task list */
-li{
-   list-style-type : circle;
-   font-size: 21px;
-   font-family: serif;
+#dateWithDays{
+    font-size: 30px;
+    padding: 7px;
+    border:1px solid lightgrey;
 }
 
-.addTask{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
+#dateTime{
+    text-align: center;
+    margin-bottom: 2%;
+}
+#top{
+    margin-bottom: 3%;
+}
+hr{
+    margin-top: 3%;
 }
 
-#taskList > li:hover {
-    margin-right: 10px;
-    box-shadow: inset 0 0 3px rgb(163, 161, 161);
-    border-radius: 10px;
-}
 
 /* delete task design */
 
 .deleteButton{
-    border-radius: 50%;
-    font-size: 10px;
-    border: 1px solid black ;
     outline: none;
     
 }
 
-li:hover >.addTask> b{
-    display: block;
-    
-}
+
 /* to bold button */
 b{
     padding: 8px;
     display: none;
 }
 
-/* design bottom part */
-#styleBottom{
-    border-top:1px solid lightgrey;
-    height: 20px;
-    padding: 5px;
-}
 
 #taskCount{
     padding-left: 10px;

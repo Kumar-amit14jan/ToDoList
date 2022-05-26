@@ -4,6 +4,8 @@
     <title>TodoList</title>
     <!-- adding style sheet -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- adding logo  -->
     <link rel="icon" href="./images/logo.jpg">
     <!-- make the app responsive -->
@@ -16,23 +18,29 @@
     <div id="todoapp">
         <!-- form is used to take the input from user -->
         <form id="input_data" action="" method="POST">
+            <input id="date" type="date" placeholder="Add Your Task Here " required>
             <input id="text" type="text" placeholder="Add Your Task Here " required>
-            <button id="addButton">Add</button>
+            <i id="addTask" class="fa-regular fa-plus"></i>
+
         </form>
         <div id="error"></div>
-        <div id="styleTop">
+        <hr id="top">
+        <p id="dateTime"><span id="dateWithDays"></span></p>
+
+        <table id="task">
             <!-- providing heading to the task  list -->
-            <div><img id="checkLogo" src="images/checkLogo.png"> complete all tasks</div>
-            <div>clear completed</div>
-        </div>
-        <!-- task are added in bullet list -->
-        <ul id="bullet">
-            <div id="taskList">
-            </div>
-        </ul>
+            <tr id="headingOftask">
+                <th>SNO:</th>
+                <th>Date</th>
+                <th>Task List</th>
+                <th>Clear Task</th>
+            </tr>
+        </table>
+
         <!-- for bottom part of task -->
+        <hr>
         <div id="styleBottom">
-            <span id="taskCount">0 tasksLeft</span>
+            <span id="taskCount">0 task left </span>
 
         </div>
     </div>
