@@ -4,16 +4,9 @@ var taskAdd = document.getElementById('addTask');
 var task_count = document.getElementById('taskCount');
 var count = 0;
 var arrayOfTask = [];
-var today = new Date();
-console.log(date);
-var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var day = today.getDay();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-document.getElementById('dateWithDays').innerHTML = weekDays[day] + '  ' + time;
+var today = new Date().toDateString();
+document.getElementById('dateWithDays').innerHTML =today;
 
-// if(arrayOfTask.length ==0){
-//     list.innerHTML+=`<tr id="emptyData"> Your List Is Empty !!</tr>`;
-// }
 
 //  implement addEventListener to the  form from  where we get data
 taskAdd.addEventListener('click', (event) => {
@@ -21,6 +14,11 @@ taskAdd.addEventListener('click', (event) => {
     var input_text = document.getElementById('text').value;
     if (input_text.length == 0) {
         document.getElementById('error').textContent = "Please Add Task !!";
+        document.getElementById('error').style.color = "red";
+        return false;
+    }
+    if(!isNaN(input_text) && !isNaN(parseInt(input_text))){
+        document.getElementById('error').textContent = "Task Can Not Number !!";
         document.getElementById('error').style.color = "red";
         return false;
     }
