@@ -48,14 +48,14 @@ taskAdd.addEventListener('click', (event) => {
             return false;
         }
         arrayOfTask.push(input_text);
-        if(arrayOfTask.length ==1){
-            var tableHeading =`<tr id="headingOftask">
+        if (arrayOfTask.length == 1) {
+            var tableHeading = `<tr id="headingOftask">
             <th>SNO:</th>
             <th>Due Date</th>
             <th>Task List</th>
             <th>Clear Task</th>
         </tr>`;
-        list.innerHTML +=tableHeading;
+            list.innerHTML += tableHeading;
             console.log("enter the game");
         }
         // creating template to add dynamic list
@@ -87,11 +87,11 @@ function myremove() {
         getAllTaskList[i].onclick = function () {
             this.remove();
             count--;
-            if(count >=0){
+            if (count >= 0) {
                 task_count.innerHTML = count + ' tasks Left';
             }
         }
-        
+
 
     }
 

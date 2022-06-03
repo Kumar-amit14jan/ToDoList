@@ -1,100 +1,110 @@
-body{
-    background-color: rgb(251,251,251);
-    margin:15px;
+body {
+    background-color: rgb(251, 251, 251);
+    margin: 15px;
 }
+
 /* for heading of application */
-h1{
+h1 {
     text-align: center;
 }
 
-#todoapp{
+#todoapp {
     margin-top: 10px;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: auto;
     height: auto;
 }
+
 /* design form  */
 
-#date ,#text{
+#date,
+#text {
     height: 40px;
     width: 40%;
     min-width: 40%;
     margin: 10px;
     font-size: 15px;
     padding: 5px;
-    background-color: rgb(251,251,252);
-    position:left;
-    border:1px solid lightgrey;
+    background-color: rgb(251, 251, 252);
+    position: left;
+    border: 1px solid lightgrey;
     background-size: 40px;
     padding-left: 10px;
     border-radius: 4px;
 }
-input:focus{
+
+input:focus {
     border: 1px solid white;
 }
-#error{
-    margin-left:10px;
+
+#error {
+    margin-left: 10px;
 }
 
 /* button design */
-#addTask{
+#addTask {
     font-size: 35px;
     margin-left: -3.6%;
     position: fixed;
     padding: 10px;
     min-width: 4px;
-    color:red;
+    color: red;
     font-weight: 500;
 }
 
 
 
 /* design heading of task list */
-table{
+table {
     margin-left: 1%;
     padding: 8px;
-    width:90%;
+    width: 90%;
     border-collapse: collapse;
 }
-td,th{
+
+td,
+th {
     text-align: left;
     padding: 8px;
-    border : 1px solid lightgrey;
-}
-#dateWithDays{
-    font-size: 30px;
-    padding: 7px;
-    border:1px solid lightgrey;
+    border: 1px solid lightgrey;
 }
 
-#dateTime{
+#dateWithDays {
+    font-size: 30px;
+    padding: 7px;
+    border: 1px solid lightgrey;
+}
+
+#dateTime {
     text-align: center;
     margin-bottom: 2%;
 }
-#top{
+
+#top {
     margin-bottom: 3%;
 }
-hr{
+
+hr {
     margin-top: 3%;
 }
 
 
 /* delete task design */
 
-.deleteButton{
+.deleteButton {
     outline: none;
-    
+
 }
 
 
 /* to bold button */
-b{
+b {
     padding: 8px;
     display: none;
 }
 
 
-#taskCount{
+#taskCount {
     padding-left: 10px;
 }
