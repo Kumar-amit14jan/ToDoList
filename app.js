@@ -5,8 +5,24 @@ var task_count = document.getElementById('taskCount');
 var count = 0;
 var arrayOfTask = [];
 var today = new Date().toDateString();
-document.getElementById('dateWithDays').innerHTML =today;
+document.getElementById('dateWithDays').innerHTML = today;
 
+// strict date only allow date after current date
+function strictDate() {
+    var dtToday = new Date();
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if (month < 10)
+        month = '0' + month.toString();
+    if (day < 10)
+        day = '0' + day.toString();
+    console.log(month)
+    var minDate = year + '-' + month + '-' + day;
+    document.getElementById('date').setAttribute('min', minDate);
+}
+strictDate();
+// add data to local storage
 
 //  implement addEventListener to the  form from  where we get data
 taskAdd.addEventListener('click', (event) => {
@@ -17,7 +33,7 @@ taskAdd.addEventListener('click', (event) => {
         document.getElementById('error').style.color = "red";
         return false;
     }
-    if(!isNaN(input_text) && !isNaN(parseInt(input_text))){
+    if (!isNaN(input_text) && !isNaN(parseInt(input_text))) {
         document.getElementById('error').textContent = "Task Can Not Number !!";
         document.getElementById('error').style.color = "red";
         return false;
@@ -26,6 +42,11 @@ taskAdd.addEventListener('click', (event) => {
     document.getElementById('error').innerHTML = "";
     var index = arrayOfTask.indexOf(input_text);
     if (index == -1) {
+        if (input_text.length <= 4) {
+            document.getElementById('error').textContent = "Please Enter some more character !!";
+            document.getElementById('error').style.color = "red";
+            return false;
+        }
         arrayOfTask.push(input_text);
         // creating template to add dynamic list
         let length = arrayOfTask.length;
@@ -46,6 +67,7 @@ taskAdd.addEventListener('click', (event) => {
 
 );
 
+
 function myremove() {
     var getAllTaskList = document.querySelectorAll('tr');
     for (var i = 0; i < getAllTaskList.length; i++) {
@@ -62,5 +84,3 @@ function myremove() {
 
 
 }
-
-
