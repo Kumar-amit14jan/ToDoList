@@ -1,5 +1,5 @@
 ## Home Page :
----
+
 This is Home Page of application
 
 ![Getting Started](./images/Screenshot%201.png)
@@ -8,7 +8,7 @@ This is Home Page of application
 
 
 ## Task Add to the application :
----
+
 Here task is add to application successfully
 
 ![TaskAdded](./images/Screenshot%202.png) 
@@ -17,21 +17,21 @@ Here task is add to application successfully
 
 
  ## Add Existing Task :
----
+
  when you try to add the existing task to application , this will throw error.
 
 ![ErrorwhileAddingTask](./images/Screenshot%203.png)
 
 ---
 ## Add Number As Task List :
----
+
 when you try to add number as  task to application , this will throw error.
 
 ![Error](./images/Screenshot%204.png)
 
 ---
 ## Add Less Character :
----
+
 When you add only one or two character.This will throw error..
 
 ![Error](./images/Screenshot%205.png)
