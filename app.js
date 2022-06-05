@@ -17,7 +17,6 @@ function strictDate() {
         month = '0' + month.toString();
     if (day < 10)
         day = '0' + day.toString();
-    console.log(month)
     var minDate = year + '-' + month + '-' + day;
     document.getElementById('date').setAttribute('min', minDate);
 }
@@ -61,7 +60,7 @@ taskAdd.addEventListener('click', (event) => {
         // creating template to add dynamic list
         let length = arrayOfTask.length;
         let template = `<tr >  
-        <td>${length}</td><td>${date}</td><td>${input_text}</td><td><span class ="deleteButton" onmouseover ="myremove()" ></i><i class="fa-solid fa-trash-can"></i>&nbspDelete</span></td></tr>`;
+        <td>${count}</td><td>${date}</td><td>${input_text}</td><td><span class ="deleteButton" onmouseover ="myremove()" ></i><i class="fa-solid fa-trash-can"></i>&nbspDelete</span></td></tr>`;
         list.innerHTML += template;
         count++;
         task_count.innerHTML = count + ' tasks Left';

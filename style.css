@@ -51,6 +51,7 @@ input:focus {
     min-width: 4px;
     color: red;
     font-weight: 500;
+    position: fixed;
 }
 
 
